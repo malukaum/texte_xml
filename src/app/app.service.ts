@@ -8,7 +8,7 @@ export class AppService {
   constructor(private http: HttpClient) {
   }
 
-  getAll(): Observable<any> {
-    return this.http.get('//localhost:8080/cool-cars');
+  abc(): Observable<any> {
+    return this.http.get('//localhost:8080/abc');
   }
 }
