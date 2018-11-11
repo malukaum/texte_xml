@@ -8,7 +8,8 @@ export class AppService {
   constructor(private http: HttpClient) {
   }
 
-  abc(): Observable<any> {
-    return this.http.get('//localhost:8080/abc');
+  abc(id:number):Observable<Blob> {
+    console.log("B");
+    return this.http.get('//localhost:8080/abc/'+id,{responseType: "blob"})
   }
 }
